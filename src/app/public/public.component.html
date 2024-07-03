@@ -1,0 +1,396 @@
+<div id="menu-header">
+    <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Documentation</a></li>
+    </ul>
+</div>
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">
+        <img src="../../assets/images/dgpc.png" alt="">
+      </a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <div id="nav-mobile" class="center hide-on-med-and-down">
+        <a href="#">Plateforme nationale de gestion des risques et catastrophes</a>
+        <!-- <img src="../../assets/images/Logo-AGEOS2.png" class="right"  alt=""> -->
+      </div>
+    </div>
+</nav>
+<div id="slide-out" class="sidenav sidenav-fixed">
+    <div class="col s12">
+        <ul class="tabs">
+            <li class="tab col s6"><a class="active" href="#test1">Aléas</a></li>
+            <li class="tab col s6"><a href="#test2">Données</a></li>
+            <li class="tab col s6"><a href="#test3">Recherche</a></li>
+        </ul>
+    </div>
+    <div id="test1" class="col s12">
+        <ul class="collapsible expandable">
+            <li class="active">
+                <div class="collapsible-header"><i class="material-icons">place</i>Inondations</div>
+                <div class="collapsible-body">
+                    <p>
+                        <label>
+                        <input type="checkbox" class="filled-in" id="flood" />
+                        <span>Potentiellement inondables</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                        <input type="checkbox" class="filled-in" id="flood_5ieme_arr" />
+                        <span>Inondables</span>
+                        </label>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">whatshot</i>Explosions et incendies</div>
+                <div class="collapsible-body">
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" id="lethal_effects" />
+                        <span>Effets létaux</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" id="irreversible_effects" />
+                        <span>Effets irreversibles</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" id="minor_effects" />
+                        <span>Effets mineurs</span>
+                    </label>
+                </p>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">home</i>Mouvements de terrain</div>
+                <div class="collapsible-body">
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">folder_special</i>Vents violents</div>
+                <div class="collapsible-body">
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">wb_cloudy</i>Epidémies</div>
+                <div class="collapsible-body">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="test2" class="col s12">
+        <ul class="collapsible expandable">
+            <li class="active">
+                <div class="collapsible-header"><i class="material-icons">place</i>Données historiques</div>
+                <div class="collapsible-body">
+                <p>
+                    <label>
+                    <input type="checkbox" class="filled-in" id="hostory_flood" />
+                    <span>Inondations</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input type="checkbox" class="filled-in" id="hostory_eboulement" />
+                    <span>Mouvement de terrain</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input type="checkbox" class="filled-in" id="hostory_wind"/>
+                    <span>Vents violents</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input type="checkbox" class="filled-in" id="hostory_earthquakes" />
+                    <span>Séismes</span>
+                    </label>
+                </p>
+            </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">home</i>Infrastructures</div>
+                <div class="collapsible-body">
+                <p>
+                    <label>
+                    <input type="checkbox" class="filled-in" id="buildings" />
+                    <span>Batiments</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input type="checkbox" class="filled-in" id="roads" />
+                    <span>Routes</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input type="checkbox" class="filled-in" id="gas_stations"/>
+                    <span>Stations services</span>
+                    </label>
+                </p>
+            </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">folder_special</i>Milieux naturels</div>
+                <div class="collapsible-body">
+                <p>
+                    <label>
+                    <input type="checkbox" class="filled-in" id="watercourse" />
+                    <span>Cours d'eau</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input type="checkbox" class="filled-in" id="swampy_areas" />
+                    <span>Zones marécageuses</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input type="checkbox" class="filled-in" id="body_of_water" />
+                    <span>Plan d'eau</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input type="checkbox" class="filled-in" id="Watershed" />
+                    <span>Bassins versants</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input type="checkbox" class="filled-in" id="geological_faults" />
+                    <span>Failles géologiques</span>
+                    </label>
+                </p>
+            </div>
+            </li>
+        </ul>
+    </div>
+    <div id="test3" class="col s12 center">
+        <h6 class="center">Recherche rapide</h6>
+        <div class="input-field col s12">
+            <select name="province" id="province" class="browser-default" required>
+            <option value="" disabled selected>Choisir une province</option>
+            </select>
+            <!-- <label>Province</label> -->
+        </div>
+        <div class="input-field col s12">
+            <select name="commune" id="commune" class="browser-default" required>
+            <option value="" disabled selected>Choisir une commune</option>
+            </select>
+            <!-- <label>Commune</label> -->
+        </div>
+        <div class="input-field col s12">
+            <select name="quartier" id="quartier" class="browser-default" required>
+                <option value="" disabled selected>Choisir un quartier</option>
+            </select>
+            <!-- <label>Quartier</label> -->
+        </div>
+        <div class="input-field col s12">
+            <select name="thematique" id="thematique" class="browser-default" required>
+            <option value="" disabled selected>Choisir une thématique</option>
+            <option value="1">Inondations</option>
+            <option value="2">Explosions et Incendies</option>
+            </select>
+            <!-- <label>Thématique</label> -->
+        </div>
+        <button class="btn waves-effect waves-light rechercher" type="button" id="rechercher" name="action" style="background-color: rgba(95, 144, 15, 0.85);">Rechercher
+            <i class="material-icons left">search</i>
+        </button>
+    </div>
+    
+</div>
+
+<div id="right-nav" class="sidenav">
+    <a class="sidenav-close-btn" (click)="closeSideNav()"><i class="material-icons">remove_circle_outline</i></a>
+    <div class="col s12" id="sidenav-title">
+        <h5>{{ sideNavTitle }}</h5>
+    </div>
+    
+</div>
+
+<main class="main-content">
+    <div class="row">
+        <div id="mapid">
+            <div class="leaflet-control-container">
+                <div class="leaflet-control other-map-options">
+                    <div class="other-map-options-toolbar leaflet-bar">
+                        <a class="legend tooltipped" data-position="bottom"  data-tooltip="Légende" (click)="openLegend()"></a>
+                        <a class="print tooltipped" data-position="bottom"  data-tooltip="Imprimer" (click)="printMap()"></a>
+                        <a href="#" class="share tooltipped" data-position="bottom"  data-tooltip="Partager"></a>
+                        <a class="report tooltipped" data-position="bottom"  data-tooltip="Créer les rapports" (click)="createReport()"></a>
+                        <a class="find tooltipped" data-position="bottom"  data-tooltip="Rechercher" (click)="openSearch()"></a>
+                    </div>
+                    <div class="other-map-options-toolbar-search leaflet-bar">
+                        <div>
+                            <input type="text" name="search_address" placeholder="Adresse...">
+                            <button onclick="handleClick()"><i class="material-icons">search</i></button>
+                        </div>   
+                    </div>
+                    <div class="other-map-options-toolbar-help leaflet-bar">
+                        <a class="help tooltipped" data-position="bottom"  data-tooltip="Aide" (click)="help()"></a>
+                        <a class="legal-mentions tooltipped" data-position="bottom"  data-tooltip="Mentions légales" (click)="legalNotice()"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="mouseposition" class="leaflet-control"></div> -->
+        </div>
+    </div>
+</main>
+
+<!-- Modal Structure -->
+<div id="presentationModal" class="modal">
+    <div class="modal-header col s12">
+        <span class="col s6">Information importante</span>
+        <a class="col s6 right modal-close" style="cursor: pointer;"><i class="material-icons">remove_circle_outline</i></a>
+    </div>
+    <div class="modal-content">
+        <div class="row">
+            <p>Dans le cadre de ses missions d’appui à la gestion et à la planification des espaces urbains, l’Agence Gabonaise d’Etudes 
+                et d’Observations Spatiales (AGEOS), est tenue de fournir aux autorités des outils d’aide à la décision pour 
+                la prévention des risques naturels.</p>
+
+                <p>A ce titre, elle a mis en place une plateforme de gestion des risques au Gabon.</p>
+                
+                <p>Elle a pour but de fournir aux décideurs et aux populations des informations géospatiales
+                     pour la prévention, la gestion et la réduction des risques naturels majeurs
+                      sur le territoire national. Ces risques sont :</p>
+                <ul>
+                    <li>Les inondations ;</li>
+                    <li>Les mouvements de terrain ;</li>
+                    <li>Les explosions et incendies ;</li>
+                    <li>Les vents violents ;</li>
+                    <li>Les épidémies.</li>
+                </ul>
+                <p>Les cartes des risques sont composées de deux types d’informations :</p>
+                <p>L’emprise spatiale des zones à risque, basées sur les caractéristiques physiques des milieux ;
+                    Les infrastructures urbaines vulnérables en cas de catastrophe naturelle, notamment les bâtiments, les voies de communication, etc.
+                    L’application permet également certaines fonctionnalités pour les utilisateurs (zonage, géolocalisation en temps réel, téléchargement
+                     de cartes en format PDF, remontée d’informations spatiales, prise de photos géolocalisées, etc.).</p>
+        </div>
+    </div>
+</div>
+
+<div id="printMapModal" class="modal">
+    <div class="modal-header col s12">
+        <span class="col s6">Imprimer cette vue</span>
+        <a class="col s6 right modal-close" style="cursor: pointer;"><i class="material-icons">remove_circle_outline</i></a>
+    </div>
+    <div class="modal-content">
+        
+        <div class="row">
+            <div class="input-field col s12">
+                <input placeholder="" id="title_name" type="text" class="validate inputText">
+                <label for="title_name">Titre (optionnel) :</label>
+            </div>
+
+            <div class="input-field col s12">
+                <input placeholder="" id="description" type="text" class="validate inputText">
+                <label for="description">Description (Optionnelle)</label>
+            </div>
+
+            <div class="input-field col s12">
+                <input placeholder="" id="your_name" type="text" class="validate inputText">
+                <label for="your_name">Votre nom / Organisation (Optionnelle)</label>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="row">
+            <p class="col s6">
+                <label>
+                  <input class="with-gap" name="type_paper" type="radio" checked />
+                  <span>A4</span>
+                </label>
+            </p>
+            <p class="col s6">
+                <label>
+                  <input class="with-gap" name="type_paper" type="radio" />
+                  <span>A3</span>
+                </label>
+            </p>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <p class="col s6">
+                <label>
+                  <input class="with-gap" name="type_orientation" type="radio" checked />
+                  <span>Portrait</span>
+                </label>
+            </p>
+            <p class="col s6">
+                <label>
+                  <input class="with-gap" name="type_orientation" type="radio" />
+                  <span>Paysage</span>
+                </label>
+            </p>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <p class="col s4">
+                <label>
+                  <input class="with-gap" name="type_fromat" type="radio" checked />
+                  <span>PDF</span>
+                </label>
+            </p>
+            <p class="col s4">
+                <label>
+                  <input class="with-gap" name="type_fromat" type="radio" />
+                  <span>DOCX</span>
+                </label>
+            </p>
+            <p class="col s4">
+                <label>
+                  <input class="with-gap" name="type_fromat" type="radio" />
+                  <span>PNG</span>
+                </label>
+            </p>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <button class="waves-effect waves-light btn-small right"><i class="material-icons left">print</i>Imprimer</button>
+        </div>
+    </div>
+</div>
+
+<div id="helpModal" class="modal">
+    <div class="modal-header col s12">
+        <span class="col s6">Aide</span>
+        <a class="col s6 right modal-close" style="cursor: pointer;"><i class="material-icons">remove_circle_outline</i></a>
+    </div>
+    <div class="modal-content">
+        <div class="row">
+            <p>Besoin d'aide ?</p>
+            <p>Consulter l'aide en ligne</p>
+            <p>Elle est disponible pour répondre à la plupart des questions concernant cette application.</p>
+            <p>Si vous n'avez pas trouvé de réponse satisfaisante, contactez-nous.</p>
+            <p>Des suggestions ?</p>
+            <p>Si vous avez des suggestions pour des améliorations ou de nouvelles fonctionnalités, proposez-les via un mail.</p>
+        </div>
+    </div>
+</div>
+
+<div id="legalNoticeModal" class="modal">
+    <div class="modal-header col s12">
+        <span class="col s6">Mentions légales</span>
+        <a class="col s6 right modal-close" style="cursor: pointer;"><i class="material-icons">remove_circle_outline</i></a>
+    </div>
+    <div class="modal-content">
+        <div class="row">
+            <p>Besoin d'aide ?</p>
+            <p>Consulter l'aide en ligne</p>
+            <p>Elle est disponible pour répondre à la plupart des questions concernant cette application.</p>
+            <p>Si vous n'avez pas trouvé de réponse satisfaisante, contactez-nous.</p>
+            <p>Des suggestions ?</p>
+            <p>Si vous avez des suggestions pour des améliorations ou de nouvelles fonctionnalités, proposez-les via un mail.</p>
+        </div>
+    </div>
+</div>

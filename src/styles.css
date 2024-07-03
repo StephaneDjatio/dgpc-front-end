@@ -1,0 +1,611 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~material-icons/iconfont/material-icons.css";
+@import "~leaflet/dist/leaflet.css";
+@import "~leaflet-draw/dist/leaflet.draw.css";
+@import '~font-awesome/css/font-awesome.min.css';
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+#menu-header {
+    height: 30px;
+    background-color: rgba(95, 144, 15, 0.85);
+}
+
+#menu-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333; */
+}
+
+#menu-header ul li {
+    display: inline;
+    float: right;
+}
+
+#menu-header ul li a{
+    display: block;
+    color: rgba(95, 144, 15, 0.85);
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 2px 16px;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+nav {
+    height: 100px;
+    background-color: rgba(95, 144, 15, 0.85);
+}
+
+nav img {
+    height: 98px;
+}
+
+.hide-on-med-and-down img {
+    margin-top: 30px;
+    height: 40px;
+    /* border-radius: 10px; */
+    margin-right: 10px;
+    background-color: #ffffff;
+}
+
+.hide-on-med-and-down a {
+    font-size: 25.6px;
+    font-size: 200%;
+    font-weight: bold;
+    /* left: 50%; */
+    position: relative;
+    text-transform: uppercase;
+    top: 15px;
+    /* font-family: 'Lato'; */
+}
+
+.sidenav {
+    top: 130px;
+    width: 330px;
+    height: calc(100vh - 130px);
+}
+
+.tabs {
+    align-items: center;
+}
+
+.tabs .tab a {
+    color: rgba(95, 144, 15, 0.85) !important;
+    font-size: 12px !important;
+    /* font-family: 'Lato'; */
+}
+
+.tabs .tab a:hover, .tabs .tab a .active {
+    background-color: rgba(95, 144, 15, 0.3) !important;
+    color: rgba(95, 144, 15, 0.85);
+}
+
+.tabs .indicator {
+    background-color: rgba(95, 144, 15, 0.85) !important;
+}
+
+#test2 {
+    padding: 8px;
+}
+
+/* #test2 select, #test2 button{
+    font-family: 'Lato';
+} */
+
+#test2 h6 {
+    font-weight: bolder !important;
+    /* font-family: 'Lato'; */
+}
+
+.expandable {
+    /* margin-left: -15px !important;
+    margin-right: -15px !important; */
+    padding-top: 30px;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    border: 2px solid rgba(95, 144, 15, 0.85);
+    /* font-family: 'Lato'; */
+}
+
+.expandable li .collapsible-header {
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: rgba(95, 144, 15, 0.85);
+    color: #ffffff;
+    margin-bottom: 10px !important;
+    font-size: 12.8px;
+}
+
+.expandable li .collapsible-header:hover {
+    background-color: rgba(95, 144, 15, 0.85);
+}
+
+.expandable li .collapsible-body {
+    padding-left: 20px;
+    font-style: italic;
+    color: #424242;
+    padding-left: 12.8px;
+    border-left: 2px solid rgba(95, 144, 15, 0.85);
+    border-right: 2px solid rgba(95, 144, 15, 0.85);
+    border-bottom: 2px solid rgba(95, 144, 15, 0.85);
+}
+
+.main-content {
+    transition: margin-right 0.1s;
+    margin-right: 0; /* Default margin when sidenav is closed */
+}
+
+.sidenav-open {
+    margin-right: 250px; /* Adjust this margin based on your sidenav width */
+}
+
+#right-nav {
+    width: 250px !important;
+}
+
+#right-nav .sidenav-close-btn {
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    color: rgba(95, 144, 15, 0.85);
+}
+
+#right-nav #sidenav-title {
+    background-color: rgba(95, 144, 15, 0.85);
+    color: #ffffff;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#right-nav #sidenav-title h5{
+    font-size: 17px !important;
+}
+
+/* main {
+    margin-left: 300px;
+} */
+
+main.expanded {
+    margin-left: 0; /* Remove any left margin */
+}
+
+#mapid {
+    height: calc(100vh - 130px);
+    margin-bottom: 0;
+    /* width: 100%; */
+}
+
+.mouseposition {
+    background-color: #ffffff;
+    color: rgba(95, 144, 15, 0.85);
+    /* margin-top: 100px !important; */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo_ageos {
+    padding: 6px 8px;
+    font: 14px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    line-height: 24px;
+    color: #555;
+}
+
+.logo_ageos img {
+    height: 50px;
+}
+
+header, main, footer {
+    padding-left: 330px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+/* Change the background color */
+
+.leaflet-interactive {
+    height: calc(100vh - 130px) !important;
+    margin-bottom: -10px !important;
+}
+
+.leaflet-control-layers-toggle {
+    background-color: rgba(95, 144, 15, 0.85); /* Example: Green background */
+}
+
+/* Optionally change the icon color */
+.leaflet-control-layers-toggle:before {
+    color: white; /* Change the icon color to white */
+}
+
+/* You can also add additional styling like borders or padding */
+.leaflet-control-layers-toggle {
+    border: 2px solid rgba(95, 144, 15, 0.85); /* Example: White border */
+    padding: 5px; /* Add some padding */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Custom styles for the zoom control buttons */
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+    background-color: rgba(95, 144, 15, 0.85) !important; /* Example: Green background */
+    color: white !important; /* Change the text color */
+    text-align: center !important;
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 6px rgba(95, 144, 15, 0.85); /* Optional: Add shadow */
+    margin: 5px;
+}
+
+.leaflet-control-zoom-in:hover,
+.leaflet-control-zoom-out:hover {
+    background-color: rgba(95, 144, 15, 0.85); /* Darker green on hover */
+    color: #f1f1f1; /* Slightly lighter text color on hover */
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+    width: 35px !important; /* Wider button */
+    height: 35px !important; /* Taller button */
+    font-size: 18px; /* Larger font size */
+}
+
+.leaflet-draw, .other-map-options {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+}
+
+.leaflet-draw-toolbar, .other-map-options-toolbar, .other-map-options-toolbar-search, .other-map-options-toolbar-help {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    margin-left: 10px;
+    margin-top: 0 !important;
+    border: none !important;
+}
+
+.other-map-options-toolbar {
+    margin-left: 230px !important;
+    margin-top: 10px !important;
+}
+
+.other-map-options-toolbar-search {
+    margin-left: 10px !important;
+    margin-top: 10px !important;
+    /* background-color: rgba(95, 144, 15, 0.85) !important; */
+}
+
+.other-map-options-toolbar-help {
+    margin-left: 10px !important;
+    margin-top: 10px !important;
+    /* background-color: rgba(95, 144, 15, 0.85) !important; */
+}
+
+.other-map-options-toolbar-search div{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    width: 200px !important; 
+    height: 40px !important; 
+    background-color: rgba(95, 144, 15, 0.85) !important;
+}
+
+.other-map-options-toolbar-search div input{
+    width: 80% !important;
+    height: 75% !important;
+    margin-left: 5px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    padding-left: 5px !important;
+    font-style: italic;
+    background-color: #ffffff !important;
+}
+
+.other-map-options-toolbar-search div button{
+    border: none;
+    border-left: 1px solid rgba(95, 144, 15, 0.85);
+    margin-right: 5px;
+    width: 20% !important;
+    height: 75% !important;
+    cursor: pointer;
+    background-color: #ffffff !important;
+}
+
+.other-map-options-toolbar-search div button i{
+    font-size: 18px !important;
+}
+
+.leaflet-draw-toolbar a, .other-map-options-toolbar a, .other-map-options-toolbar-help a {
+    background: rgba(95, 144, 15, 0.85) !important; 
+    border-color: #ffffff !important; 
+    /* fill: #ffffff; */
+    width: 40px !important; 
+    height: 40px !important; 
+    margin: 5px;
+    cursor: pointer;
+}
+/* leaflet-draw-toolbar leaflet-bar leaflet-draw-toolbar-top */
+
+/* Hide the original icon */
+.leaflet-draw-toolbar .leaflet-draw-draw-polygon {
+    background: none;
+}
+/* Add Materialize icon */
+.leaflet-draw-toolbar .leaflet-draw-draw-polygon::before {
+    content: 'format_shapes'; /* Unicode for 'terrain' icon in Materialize */
+    font-family: 'Material Icons';
+    font-size: 25px; /* Adjust size as needed */
+    color: #ffffff; /* Change the color if needed */
+    display: block;
+    line-height: 38px; /* Center the icon vertically */
+}
+
+/* Hide the original icon */
+.leaflet-draw-toolbar .leaflet-draw-draw-rectangle {
+    background: none;
+}
+/* Add Materialize icon */
+.leaflet-draw-toolbar .leaflet-draw-draw-rectangle::before {
+    content: 'check_box_outline_blank'; /* Unicode for 'terrain' icon in Materialize */
+    font-family: 'Material Icons';
+    font-size: 25px; /* Adjust size as needed */
+    color: #ffffff; /* Change the color if needed */
+    display: block;
+    line-height: 38px; /* Center the icon vertically */
+}
+
+/* Hide the original icon */
+.leaflet-draw-toolbar .leaflet-draw-edit-edit {
+    background: none;
+}
+/* Add Materialize icon */
+.leaflet-draw-toolbar .leaflet-draw-edit-edit::before {
+    content: 'edit'; /* Unicode for 'terrain' icon in Materialize */
+    font-family: 'Material Icons';
+    font-size: 25px; /* Adjust size as needed */
+    color: #ffffff; /* Change the color if needed */
+    display: block;
+    line-height: 38px; /* Center the icon vertically */
+}
+
+/* Hide the original icon */
+.leaflet-draw-toolbar .leaflet-draw-edit-remove {
+    background: none;
+}
+
+/* Add Materialize icon */
+.leaflet-draw-toolbar .leaflet-draw-edit-remove::before {
+    content: 'delete'; /* Unicode for 'terrain' icon in Materialize */
+    font-family: 'Material Icons';
+    font-size: 25px; /* Adjust size as needed */
+    color: #ffffff; /* Change the color if needed */
+    display: block;
+    line-height: 38px; /* Center the icon vertically */
+}
+
+/* Hide the original icon */
+.leaflet-draw-toolbar .leaflet-disabled {
+    background: #b0b3b0 !important;
+}
+  
+.leaflet-draw-toolbar a:hover {
+    background: #ced3ce !important; /* Change button background color on hover */
+}
+
+.leaflet-div-icon {
+    background-color: #f4f4f4;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: inline-block;
+}
+  
+.leaflet-editing-icon {
+    background-color: #f4f4f4;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.other-map-options-toolbar .legend {
+    background: none;
+}
+
+.other-map-options-toolbar .legend::before {
+    content: 'format_list_bulleted'; 
+    font-family: 'Material Icons';
+    font-size: 25px; /* Adjust size as needed */
+    color: #ffffff; /* Change the color if needed */
+    display: block;
+    line-height: 40px; /* Center the icon vertically */
+}
+
+.other-map-options-toolbar .print {
+    background: none;
+}
+
+.other-map-options-toolbar .print::before {
+    content: 'print'; 
+    font-family: 'Material Icons';
+    font-size: 25px; /* Adjust size as needed */
+    color: #ffffff; /* Change the color if needed */
+    display: block;
+    line-height: 40px; /* Center the icon vertically */
+}
+
+.other-map-options-toolbar .share {
+    background: none;
+}
+
+.other-map-options-toolbar .share::before {
+    content: 'share'; 
+    font-family: 'Material Icons';
+    font-size: 25px; /* Adjust size as needed */
+    color: #ffffff; /* Change the color if needed */
+    display: block;
+    line-height: 40px; /* Center the icon vertically */
+}
+
+.other-map-options-toolbar .report {
+    background: none;
+}
+
+.other-map-options-toolbar .report::before {
+    content: 'insert_drive_file'; 
+    font-family: 'Material Icons';
+    font-size: 25px; /* Adjust size as needed */
+    color: #ffffff; /* Change the color if needed */
+    display: block;
+    line-height: 40px; /* Center the icon vertically */
+}
+
+.other-map-options-toolbar .find {
+    background: none;
+}
+
+.other-map-options-toolbar .find::before {
+    content: 'search'; 
+    font-family: 'Material Icons';
+    font-size: 25px; /* Adjust size as needed */
+    color: #ffffff; /* Change the color if needed */
+    display: block;
+    line-height: 40px; /* Center the icon vertically */
+}
+
+.other-map-options-toolbar-help .help {
+    background: none;
+}
+
+.other-map-options-toolbar-help .help::before {
+    content: 'lightbulb_outline'; 
+    font-family: 'Material Icons';
+    font-size: 25px; /* Adjust size as needed */
+    color: #ffffff; /* Change the color if needed */
+    display: block;
+    line-height: 40px; /* Center the icon vertically */
+}
+
+.other-map-options-toolbar-legal-mentions .help {
+    background: none;
+}
+
+.other-map-options-toolbar-help .legal-mentions::before {
+    content: 'copyright'; 
+    font-family: 'Material Icons';
+    font-size: 25px; /* Adjust size as needed */
+    color: #ffffff; /* Change the color if needed */
+    display: block;
+    line-height: 40px; /* Center the icon vertically */
+}
+
+
+/* css to customize Leaflet default styles  */
+
+.leaflet-popup-content-wrapper {
+    border-left: 10px solid #2c3e50;
+    ;
+    border-right: 10px solid #2c3e50;
+    ;
+    border-top: 10px solid #2c3e50;
+    border-bottom: 10px solid #2c3e50;
+    font-size: 14px;
+}
+
+.province-tooltip {
+    border-left: 10px solid #2c3e50;
+    ;
+    border-right: 10px solid #2c3e50;
+    ;
+    border-top: 10px solid #2c3e50;
+    border-bottom: 10px solid #2c3e50;
+    font-size: 14px;
+}
+
+
+/* Map control buttons */
+
+#printMapModal {
+    width: 400px !important;
+    top: 20% !important;
+}
+
+.modal .modal-header {
+    background-color: rgba(95, 144, 15, 0.85);
+    padding-top: 5px;
+    padding: 5px;
+}
+
+.modal .modal-header span {
+    font-size: 18px;
+    color: #ffffff;
+    /* text-align: center; */
+}
+
+.modal .modal-header a {
+    color: #ffffff;
+}
+
+#printMapModal .modal-content .row{
+    margin-bottom: 3px !important;
+    font-size: 12px !important;
+}
+
+#printMapModal .modal-content .inputText{
+    height: 2rem !important;
+    border: 1px solid rgba(95, 144, 15, 0.85) !important;
+    margin-top: 5px;
+}
+
+#printMapModal .modal-content button{
+    background-color: rgba(95, 144, 15, 0.85) !important;
+    border: 1px solid rgba(95, 144, 15, 0.85) !important;
+    margin-top: 5px;
+}
+
+#helpModal {
+    width: 400px !important;
+    top: 30% !important;
+}
+
+#helpModal .modal-content p {
+    color: rgba(95, 144, 15, 0.85);
+}
+
+#legalNoticeModal {
+    width: 700px !important;
+    top: 30% !important;
+}
+
+#legalNoticeModal .modal-content p {
+    color: rgba(95, 144, 15, 0.85);
+}
+
+#presentationModal .modal-content p {
+    color: rgba(95, 144, 15, 0.85);
+    font-size: 15px;
+    text-align: justify;
+}
+
+#presentationModal .modal-content ul {
+    padding-left: 30px;
+}
+
+#presentationModal .modal-content ul li{
+    color: rgba(95, 144, 15, 0.85);
+    font-size: 15px;
+    list-style: disc !important;
+}
+
